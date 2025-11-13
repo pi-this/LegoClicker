@@ -1,0 +1,43 @@
+Raise some of the prices most cookie games go from 1 per click to buying something worth 100 clicks
+
+Make it so you can see how many clicks were clicked
+
+Auto clicks and mouse clicks count here:
+Give yourself different titles for different click amounts: less than 100 clicks "New to Legos"
+between 100 and 500 "Learning about legos"
+500-1000 "Starting to play legos"
+1K-10K "Playtime"
+10K-100K "I can build with legos!"
+100K-1M "Crazy Builder"
+1M-50M "Lego, every day!"
+-> "Master Builder!" Examples only.
+
+make the story line a bit more clear.
+
+
+New Achievements:
+Play the Lego clicker game for over 30 minutes: +$25
+Play the Lego Clicker game for over 1 hour: +$100
+
+Build all the Lego sets: +5,000 Bricks
+Buy everything!: The Crazy Money Clicker
+
+Hand-click the clicker image 1,000 times: +100 bricks and a new clicker
+
+
+New Ideas:
+Make the selling process clear - instead of saying build set I could say build and sell
+
+Add the Make My Set feature where there can be like an art thing where you can click buttons to buy different stickers and things more you add more money you get when you sell your design.
+
+Add K and M things: $2.43K Like that and that: $64.32M and also for legos too!
+
+Add a clicker explosion you can buy: it can be a button that is at the bottom of the screen that you can activate every 5 minutes the explosion gives you starting at +50K Lego bricks per explosion click. But you can up the value and lower the time with upgrades.
+
+
+make an achievement outline and how to get achievements there so the user knows. Hidden achievements could be a separate thing.
+
+
+Add a mute button on the game. Add background scenes you can buy. 
+
+Make it so that you can buy one endless product but the cost goes up as the value that you get goes up too. Example starting price: 2K gives 500. Buy once now 10K and 3K then 50K and 10K then on and on.. Never ending...

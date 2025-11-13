@@ -1,0 +1,12 @@
+NEXT TO DO:
+
++ Add a clicker catigory to the buy section (add at least 4 in this)
++ achievments, add a building one, a buying one, and a clicking one (at least 3 all together)
+
+DEEP FUTURE / THOUGHTS:
+
++ Change of backgrounds
++ more sounds
++ purchace background music/sound
++ purchace background characters
++ clicker improvments that click money not bricks

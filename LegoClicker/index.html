@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="icon" type="image/png" href="images/Logo.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link type="style"
+</head>
+<body>
+
+    <button class="tablink" onclick="button3.play(); openPage('click', this, 'white')" id="defaultOpen">Click</button>
+    <button class="tablink" onclick="button3.play(); openPage('create', this, 'darkgoldenrod')">Create</button>
+    <button class="tablink" onclick="button3.play(); openPage('build', this, 'green')">Build</button>
+    <button class="tablink" onclick="button3.play(); openPage('buy', this, 'blue')">Buy</button>
+    <button class="tablink" onclick="button3.play(); openPage('achievements', this, 'orange')">Achievements</button>
+
+    <div id="click" class="tabcontent">
+        <html>
+        <body>
+            <head>
+                <div class="labels">
+                    <h1 id='clicks' class='ctext'>0</h1>
+                    <h1 id='legos' class='ltext'>0</h1>
+                    <h1 id='money' class='mtext'>0</h1>
+                    <h3 id="title">Click the lego!</h3>
+                    <p id="levelProgressTitle">Level:</p>
+                    <p id="levelValue">1</p>
+                    <progress class="progress-bar" id="levelProgress" value="0" max="100">0%</progress>
+                    <p id="toNextLevel1">0%</p><p id="toNextLevel2"> to level</p><p id="toNextLevel3">2</p>
+                </div>
+
+                <img id='THELEGO' class='centerall clicker' onclick="add()" src="images/redlego.png" alt="Trulli">
+
+                <img src="images/mouse.png" id='clicksicon'></img>
+                <img src="images/redlego.png" id='legosicon'></img>
+                <img src="images/cash.png" id='moneyicon'></img>
+
+                <img src="images/redlego.png" onclick="CLICKred1()" width=30px class='iovX'></img>
+                <img src="images/yellowlego.png" onclick="CLICKyellow2FIRST()" width=35px class='iovX' id="yellow2pre" style='display: none'></img> <!-- $1 -->
+                <img src="images/bluelego.png" onclick="CLICKblue2FIRST()" width=35px class='iovX' id="blue2pre" style='display: none'></img> <!-- $5 -->
+                <img src="images/red12lego.png" onclick="CLICKred12FIRST()" width=35px class='iovX' id="red12pre" style='display: none'></img> <!-- $8 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> 
+
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $10 -->
+                
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $25 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $50 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $125 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $300 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $800 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $1,000 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $5,000 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $8,000 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $10,000 -->
+
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $15,000 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $25,000 -->
+                <img src="images/clicker2.png" onclick="CLICKyellow1()" width=50px class='iovX' id="yellow1" style='display: none'></img> <!-- $38,000 -->
+
+
+</div>
+
+<script src="js/time.js"></script>
+
+  </head>
+</body>
+  </html>
+
+<div id="build" class="tabcontent">
+  <center><h3 id="info"></h3></center>
+  <center><div class="c-build">
+
+  <input type="radio" onclick="radio.play(); clearBI()" name="b" id="bd-1" checked>
+  <label for="bd-1" class="under100B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 59 bricks | earnings: $9.99</h2>
+    <center><img src="images/PBCC.legoset.webp" width=500 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-2" >
+  <label for="bd-2" class="under100B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 88 bricks | earnings: $15.99</h2>
+    <br>
+    <br>
+    <br>
+    <center><img src="images/TMNSM.legoset.webp" width=500 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-3">
+  <label for="bd-3" class="under500B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 194 bricks | earnings: $19.99</h2>
+    <center><img src="images/PSV.legoset.webp" width=500 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-4">
+  <label for="bd-4" class="under500B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 215 bricks | earnings: $29.99</h2>
+    <center><img src="images/RHT.legoset.webp" width=500 alt="Snow on leafs"></center>
+  </div>
+
+  <input type="radio" onclick="radio.play(); clearBI" name="b" id="bd-5">
+  <label for="bd-5" class="under500B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 262 bricks | earnings: $39.99</h2>
+    <center><img src="images/RFT.legoset.webp" width=500 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-6" >
+  <label for="bd-6" class="under500B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 432 bricks | earnings: $44.99</h2>
+    <center><img src="images/ITF.legoset.webp" width=350 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-7">
+  <label for="bd-7" class="under1000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 598 bricks | earnings: $59.99</h2>
+    <center><img src="images/UH.legoset.webp" width=500 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-8">
+  <label for="bd-8" class="under1000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 840 bricks | earnings: $64.99</h2>
+    <center><img src="images/ZTMB.legoset.webp" width=300 alt="Snow on leafs"></center>
+  </div>
+  
+  
+  
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-9" >
+  <label for="bd-9" class="under1500B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 1125 bricks | earnings: $78.99</h2>
+    <center><img src="images/STHGHZ.legoset.webp" width=450 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-10">
+  <label for="bd-10" class="under1500B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 1265 bricks | earnings: $99.99</h2>
+    <center><img src="images/WTP.legoset.webp" width=350 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-11">
+  <label for="bd-11" class="under1500B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 1321 bricks | earnings: $109.99</h2>
+    <center><img src="images/DBCBES.legoset.webp" width=500 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-12">
+  <label for="bd-12" class="under1500B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 1353 bricks | earnings: $169.99</h2>
+    <center><img src="images/MF.legoset.webp" width=480 alt="Snow on leafs"></center>
+  </div>
+  
+  
+  
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-13">
+  <label for="bd-13" class="under2000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 1508 bricks | earnings: $179.99</h2>
+    <center><img src="images/OP.legoset.webp" width=350 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-14">
+  <label for="bd-14" class="under2000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 1709 bricks | earnings: $219.99</h2>
+    <br>
+    <center><img src="images/TIC.legoset.webp" width=200 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-15">
+  <label for="bd-15" class="under2000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 1921 bricks | earnings: $249.99</h2>
+    <br>
+    <br>
+    <br>
+    <center><img src="images/BMW.legoset.webp" width=350 alt="Snow on leafs"></center>
+  </div>
+  
+  
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-16">
+  <label for="bd-16" class="over2000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 2065 bricks | earnings: $299.99</h2>
+    <center><img src="images/ML.legoset.webp" width=350 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-17">
+  <label for="bd-17" class="over2000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 3662 bricks | earnings: $399.99</h2>
+    <br>
+    <br>
+    <center><img src="images/GP.legoset.webp" width=400 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-18">
+  <label for="bd-18" class="over2000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 3854 bricks | earnings: $499.99</h2>
+    <br>
+    <center><img src="images/ACDB.legoset.webp" width=350 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-19">
+  <label for="bd-19" class="over2000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 4049 bricks | earnings: $549.99</h2>
+    <br>
+    <br>
+    <center><img src="images/H.legoset.webp" width=350 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-20">
+  <label for="bd-20" class="over2000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 6187 bricks | earnings: $599.99</h2>
+    <br>
+    <br>
+    <br>
+    <center><img src="images/TRC.legoset.webp" width=450 alt="Snow on leafs"></center>
+  </div>
+  
+  <input type="radio" name="b" onclick="radio.play(); clearBI()" id="bd-21">
+  <label for="bd-21" class="over2000B"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch">price: 7541 bricks | earnings: $849.99</h2>
+    <br>
+    <br>
+    <br>
+    <center><img src="images/MF2.legoset.webp" width=400 alt="Snow on leafs"></center>
+  </div>
+  
+<center></div>
+<button onclick="buttonMain.play(); U100B()" class="button whiteGreen">Under 100 Bricks</button>
+<button onclick="buttonMain.play(); B100TO500B()" class="button white2Green">100-500 Bricks</button>
+<button onclick="buttonMain.play(); B500TO1000B()" class="button brownishGreen">500-1,000 Bricks</button>
+
+<button onclick="buttonMain.play(); B1000BTO1500B()" class="button tannyGreen">1,000-1,500 Bricks</button>
+<button onclick="buttonMain.play(); B1500BTO2000B()" class="button redGreen">1,500-2,000 Bricks</button>
+<button onclick="buttonMain.play(); O2000B()" class="button goldGreen">Over 2,000 Bricks</button>
+
+
+<button onclick="pb.play(); BUILD()" class="button greenGreen">Build Set</button>
+</center></div>
+
+
+
+<div id="create" class="tabcontent" style="background-color: darkgoldenrod">
+    <center><h1>Creation Place</h1></center>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+    <div style="position: absolute; top: 100px;">
+        <h4>Your Money $0</h4>
+        <h3>Gain $0</h3>
+        <br />
+    </div>
+
+    <br />
+    <div style="height:700px;width:200px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+
+        <br />
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/LEGO.svg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="50">
+        </div>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/LEGO.svg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="50">
+        </div>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/LEGO.svg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="50">
+        </div>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/LEGO.svg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="50">
+        </div>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/LEGO.svg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="50">
+        </div>
+    </div>
+    <br />
+    <button>Sell</button>
+
+    <div class="grid-container">
+        <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+
+
+
+
+    <! -- This is where the drag the image lego and the more expensive the lego the more money you can get if you sell your custom build -- >
+    <! -- You can get a whole lot more than the normal builds -- >
+
+    <! -- more on draggable: https://www.w3schools.com/howto/howto_js_draggable.asp -- >
+
+</div>
+
+
+
+    <div id="achievements" class="tabcontent">
+        <center><h1 id="noAchive">No Achievements Have Been Discovered</h1></center>
+        <div class="row">
+            <div class="column container" id="ach1">
+                <img src="images/minifig.png" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div><img class="overimg" src="images/ach.png"></div>
+                </div>
+            </div>
+
+            <div class="column container" id="ach2">
+                <img src="images/fig2.png" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div><img class="overimg" src="images/ach2.png"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="buy" class="tabcontent">
+        <center><h3 id="info-buy" style="color: black"></h3></center>
+        <center>
+            <div class="c-buy">
+
+                <input type="radio" onclick="radio.play(); buyinfo()" name="a" id="cr-1" checked>
+                <label for="cr-1" class="BPC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">A Piece</h2>
+                    <center><img src="images/Piece.png" width=500 alt="piece"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-2">
+                <label for="cr-2" class="BPC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">A Stack</h2>
+                    <center><img src="images/LegoStack.png" width=500 alt="stack"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-3">
+                <label for="cr-3" class="BPC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">A Pile</h2>
+                    <center><img src="images/Pile.png" width=550 alt="pile"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-4">
+                <label for="cr-4" class="BPC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">A Box</h2>
+                    <center><img src="images/BoxLego.png" width=550 alt="box"></center>
+                </div>
+
+
+
+                <input type="radio" onclick="radio.play(); buyinfo()" name="a" id="cr-5">
+                <label for="cr-5" class="AC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">An Auto Click</h2>
+                    <center><img src="images/Aclick.png" width=500 alt="click"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-6">
+                <label for="cr-6" class="AC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">An Auto Push</h2>
+                    <center><img src="images/push.png" width=500 alt="push"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-7">
+                <label for="cr-7" class="AC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">An Auto Punch</h2>
+                    <center><img src="images/punch.png" width=550 alt="punch"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-8">
+                <label for="cr-8" class="AC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">An Auto Shock</h2>
+                    <center><img src="images/shock.png" width=550 alt="shock"></center>
+                </div>
+
+
+
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-9">
+                <label for="cr-9" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">1 x 1 Yellow Brick</h2>
+                    <center><img src="images/buylegoYellow1x1.png" width=550 alt="yellow1_first"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-10">
+                <label for="cr-10" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">1 x 1 Blue Brick</h2>
+                    <center><img src="images/buylegoBlue1x1.png" width=550 alt="blue"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-11">
+                <label for="cr-11" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">1 x 2 Red Brick</h2>
+                    <center><img src="images/buylego1x2.png" width=550 alt="red"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-12">
+                <label for="cr-12" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">2 x 2 Red Brick</h2>
+                    <center><img src="images/2x2brickbuy.png" width=550 alt="red"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-13">
+                <label for="cr-13" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">1 x 1 Red Round Stud</h2>
+                    <center><img src="images/1x1RRS.png" width=550 alt="red"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-14">
+                <label for="cr-14" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">2 x 2 Red Round Brick</h2>
+                    <center><img src="images/2x2roundB.png" width=550 alt="red"></center>
+                </div>
+
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-16">
+                <label for="cr-16" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">1 x 1 Gray Brick With Headlight</h2>
+                    <center><img src="images/1x1gray.png" width=350 alt="gray"></center>
+                </div>
+
+
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-18">
+                <label for="cr-18" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">1 x 2 - 1 x 4 Gray Bracket</h2>
+                    <center><img src="images/B.png" width=300 alt="gray"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-19">
+                <label for="cr-19" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">2 x 6 Green Brick</h2>
+                    <center><img src="images/2x6green.png" width=500 alt="green"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-20">
+                <label for="cr-20" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">1 x 2 Brown Brick</h2>
+                    <center><img src="images/BROWN.png" width=450 alt="brown"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-21">
+                <label for="cr-21" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">1 x 4 Red Brick With Sticker</h2>
+                    <center><img src="images/1x4RL.png" width=350 alt="red"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-22">
+                <label for="cr-22" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">Tree</h2>
+                    <center><img src="images/Tree.png" width=550 alt="tree"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-23">
+                <label for="cr-23" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">Lego Logo</h2>
+                    <center><img src="images/THElego.png" width=550 alt="image"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-24">
+                <label for="cr-24" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">Box of Legos</h2>
+                    <center><img src="images/box.png" width=400 alt="image"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-26">
+                <label for="cr-26" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <br>
+                    <h2 class="ch">Lego Minifig In Suit</h2>
+                    <center><img src="images/LEO.png" width=300 alt="minifig"></center>
+                </div>
+
+                <input type="radio" name="a" onclick="radio.play(); buyinfo()" id="cr-27">
+                <label for="cr-27" class="CC"></label>
+                <div class="ci" style="--z: 4">
+                    <h2 class="ch">Lego Minifig Painter</h2>
+                    <center><img src="images/artest.png" width=300 alt="minifig"></center>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <button onclick="buttonMain.play(); BPC()" class="button yellowBlue">Bricks Per Click</button>
+            <button onclick="buttonMain.play(); AC()" class="button redBlue">Auto Clickers</button>
+            <button onclick="buttonMain.play(); CC()" class="button whiteBlue">Custom Clickers</button>
+            <br>
+            <button onclick="pb.play(); BUY()" class="button greenBlue">Purchase Item</button>
+    </div></center>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lego Clicker</title>
+
+    <link rel="stylesheet" href="css/lc.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/achievements.css">
+
+    <script src='js/lc.js'></script>
+
+    <script src='js/changeClicker.js'></script>
+
+    <script src='js/achieve.js'></script>
+
+    <script src="js/tabs.js"></script>
+
+    </body>
+    </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Images</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Drag and Drop Images onto Canvas</h1>
+  <p>Drag the images below onto the canvas:</p>
+  <img src="C:\Users\world\OneDrive\Desktop\LegoClicker\test_case\minifig.png" draggable="true" id="image1" alt="Image 1">
+  <img src="C:\Users\world\OneDrive\Desktop\LegoClicker\test_case\minifig.png" draggable="true" id="image2" alt="Image 2">
+  <canvas id="myCanvas" width="500" height="300"></canvas>
+  <p>Images on canvas: <span id="imageCount">0</span></p>
+
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    const imageCountDisplay = document.getElementById('imageCount');
+    let imagesOnCanvas = 0;
+
+    // Handle drag and drop
+    canvas.addEventListener('dragover', (event) => {
+      event.preventDefault(); // Allow drop
+    });
+
+    canvas.addEventListener('drop', (event) => {
+      event.preventDefault();
+      const imageId = event.dataTransfer.getData('text');
+      const img = document.getElementById(imageId);
+
+      if (img) {
+        const rect = canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+
+        // Draw the image on the canvas
+        ctx.drawImage(img, x - img.width / 2, y - img.height / 2);
+
+        // Increment and update the image count
+        imagesOnCanvas++;
+        imageCountDisplay.textContent = imagesOnCanvas;
+      }
+    });
+
+    // Set up dragstart for images
+    document.querySelectorAll('img').forEach((img) => {
+      img.addEventListener('dragstart', (event) => {
+        event.dataTransfer.setData('text', event.target.id);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,551 @@
+
+.centerall {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-bar {
+    background: #F88;
+    text-align: right;
+}
+
+#toNextLevel1 {
+    position: absolute;
+    bottom: 65%;
+    left: 5%;
+}
+
+#toNextLevel2 {
+    position: absolute;
+    bottom: 63%;
+    left: 3.5%;
+}
+
+#toNextLevel3 {
+    position: absolute;
+    bottom: 63%;
+    left: 7.5%;
+}
+
+
+
+#levelProgress {
+    position: absolute;
+    bottom: 70%;
+    left: 1%;
+}
+
+#levelProgressTitle {
+    position: absolute;
+    bottom: 70%;
+    left: 1%;
+}
+
+#levelValue {
+    position: absolute;
+    bottom: 70%;
+    left: 10%;
+}
+
+
+#legos {
+  position: absolute;
+  font-size: 20px;
+  bottom: 83%;
+  left: 10%;
+}
+
+#legosicon {
+  position: absolute;
+  bottom: 85%;
+  left: 2%;
+  width: 20px;
+}
+
+#money {
+  position: absolute;
+  bottom: 78.5%;
+  left: 10%;
+  font-size: 20px;
+}
+
+#moneyicon {
+  position: absolute;
+  bottom: 80%;
+  left: 2%;
+  width: 18px;
+}
+
+#clicks {
+    position: absolute;
+    bottom: 87.5%;
+    left: 10%;
+    font-size: 20px;
+}
+
+#clicksicon {
+    position: absolute;
+    bottom: 87.5%;
+    left: 1.52%;
+    width: 45px;
+}
+
+#title {
+    position: absolute;
+    bottom: 74%;
+    left: 1.52%;
+}
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 100px;
+}
+
+.centertxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.whiteGreen {
+  background-color: green; 
+  color: black; 
+  border: 2px solid white;
+}
+
+.whiteGreen:hover {
+  background-color: white;
+  color: black;
+}
+
+.white2Green:hover {
+  background-color: #ffe4c4;
+  color: black;
+}
+
+#div1 {
+    float: left;
+}
+
+#div1, #div2 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.grid-container {
+    top: 200px;
+    left: 300px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.white2Green {
+  background-color: green; 
+  color: black; 
+  border: 2px solid #ffe4c4;
+}
+
+.brownishGreen:hover {
+  background-color: #a52a2a;
+  color: black;
+}
+
+.brownishGreen {
+  background-color: green;
+  color: black; 
+  border: 2px solid #a52a2a;
+}
+
+.tannyGreen:hover {
+  background-color: #d2691e;
+  color: black;
+}
+
+.tannyGreen {
+  background-color: green;
+  color: black; 
+  border: 2px solid #d2691e;
+}
+
+.redGreen:hover {
+  background-color: #d21e1e;
+  color: black;
+}
+
+.redGreen {
+  background-color: green;
+  color: black; 
+  border: 2px solid #d21e1e;
+}
+
+.goldGreen:hover {
+  background-color: gold;
+  color: black;
+}
+
+.goldGreen {
+  background-color: green;
+  color: black; 
+  border: 2px solid gold;
+}
+
+.greenGreen {
+  background-color: green; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.greenGreen:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.greenBlue {
+  background-color: blue; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.greenBlue:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.whiteBlue {
+  background-color: blue; 
+  color: black; 
+  border: 2px solid white;
+}
+
+.whiteBlue:hover {
+  background-color: white;
+  color: black;
+}
+
+.yellowBlue {
+  background-color: blue; 
+  color: black; 
+  border: 2px solid yellow;
+}
+
+.yellowBlue:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.redBlue {
+  background-color: blue; 
+  color: black; 
+  border: 2px solid red;
+}
+
+.redBlue:hover {
+  background-color: red;
+  color: black;
+}
+
+
+.greenOrange {
+  background-color: orange; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.greenOrange:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.yellowOrange {
+  background-color: blue; 
+  color: black; 
+  border: 2px solid yellow;
+}
+
+.yellowOrange:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.redOrange {
+  background-color: blue;
+  color: black; 
+  border: 2px solid red;
+}
+
+.redOrange:hover {
+  background-color: red;
+  color: black;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+body {
+    background-image: url('css_images/ground.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.c-buy {
+  min-width: 700px;
+  width: 700px;
+  height: 500px;
+  border-radius: 12px;
+  padding: 20px;
+  padding-bottom: 40px;
+  box-shadow: 0 8px 48px 2px hsla(10 6% 15% / .4);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+  background-color: blue;
+
+  box-sizing: border-box;
+}
+
+.c-build {
+  min-width: 700px;
+  width: 700px;
+  height: 500px;
+  border-radius: 12px;
+  padding: 20px;
+  padding-bottom: 40px;
+  box-shadow: 0 8px 48px 2px hsla(10 6% 15% / .4);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+  background-color: green;
+
+  box-sizing: border-box;
+}
+
+.ci {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: inherit;
+  height: inherit;
+  transform-origin: left 50%;
+
+  background: inherit;
+
+  z-index: var(--z);
+  transition: .3s ease-out;
+}
+
+.ci img {
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.ch {
+  position: absolute;
+  top: 70%;
+  left: 4%;
+  transform: translateY(-50%);
+
+  font-size: 2rem;
+  color: hsla(var(--h) var(--s) var(--l) / .8);
+  text-shadow: 0 2px 10px hsla(var(--h) var(--s) 10% / .3);
+}
+
+input[name="a"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -10;
+}
+
+input[name="b"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -10;
+}
+
+label {
+  width: 10%;
+  height: 10px;
+  margin-right: 4px;
+  border-radius: 20px;
+
+  background: hsla(0 0% 90% / .3);
+  cursor: pointer;
+
+  position: relative;
+  z-index: 10;
+  
+}
+
+input:checked+label {
+  background-color: black;
+}
+
+.BPC {
+  background-color: yellow;
+}
+
+.AC {
+  background-color: red;
+}
+
+.CC {
+  background-color: white;
+}
+
+.under100B {
+  background-color: white; 
+}
+
+.under500B {
+  background-color: #FFE4C4; 
+}
+
+.under1000B {
+  background-color: #A52A2A; 
+}
+
+.under1500B {
+  background-color: #D2691E;
+}
+
+.under2000B {
+  background-color: #d21e1e;
+}
+
+.over2000B {
+  background-color: gold;
+}
+
+label:last-child {
+  margin-right: 0;
+  background-color: black;
+}
+
+input:not(:checked)+label+.ci {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.iovX {
+  position: relative;
+  float: left;
+  left: -15px;
+  top: 107%;
+  margin: 2px;
+}
